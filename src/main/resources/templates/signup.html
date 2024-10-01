@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create new account</title>
+</head>
+<body>
+	<div class='message'>
+		<h2>Welcome to KodBook.....!</h2>
+		<h3>Don't have your KodBook...?</h3>
+		<p>Create your accoutn on KodBook, the most liked social media by professionals.....</p>
+	</div>
+	<div class='form-data'>
+		<form action="/validate" method="post">
+			<label>Username : </label>
+			<input type="text" name="username" required placeholder="Username">
+			<br>
+			<label>Email : </label>
+			<input type="email" name="email" required placeholder="Email">
+			<br>
+			<label>Password : </label>
+			<input type="password" name="password" required placeholder="Password">
+			<br>
+			<label>DOB : </label>
+			<input type="date" name="dob" required >
+			<br>
+			<label>Gender : </label>
+			<input type="radio" name="gender" value='male'>Male
+			<input type="radio" name="gender" value='female'>Female
+			<input type="radio" name="gender" value='others'>Others
+			<br>
+			<input type="submit" value="SIGN UP">			
+		</form>
+	</div>
+	<p>Already having account?<a href='/'>Login..!</a></p>
+
+
+</body>
+</html>

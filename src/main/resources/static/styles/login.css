@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fff;
+}
+
+.message{
+  padding: 0px 48px 0px 0px;
+}
+
+.message,
+.form-data {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.message h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.message h3 {
+  font-size: 24px;
+}
+
+.form-group{
+  border: 1px solid #ccc;
+  padding: 28px;
+  border-radius: 15px;
+}
+
+.form-container {
+  text-align: left;
+  position: relative;
+}
+
+.form-container label {
+  display: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: -55px;
+}
+
+.form-container input[type='text']:focus +label{
+  color: black;
+  position: absolute  ;
+
+}
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#login{
+  width: 100%;
+  padding: 5px;
+  background-color: #0866FF;
+  font-weight: bold;
+  color: #fff;
+  font-family: 17px Helvetica, Arial, sans-serif;
+  border-radius: 17px;
+  border: none;
+  height: 35px;
+  margin-top: 1px;
+
+}
+
+#cna{
+  width: 100%;
+  padding: 5px;
+  background-color: #42B72A;
+  font-weight: bold;
+  color: #fff;
+  font-family: 17px Helvetica, Arial, sans-serif;
+  border-radius: 17px;
+  border: none;
+  height: 35px;
+  margin-top: 1px;
+}
+.form-container button {
+  width: 100%;
+  margin: 9px;
+
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  width: 100%;
+}
