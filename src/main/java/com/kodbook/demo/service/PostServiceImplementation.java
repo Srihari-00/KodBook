@@ -1,5 +1,7 @@
 package com.kodbook.demo.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,13 @@ public class PostServiceImplementation implements PostService
 	{
 		repo.save(post);
 		return "Post is created....";
+	}
+
+	@Override
+	public List<Post> getAllPosts() 
+	{
+		
+		return repo.findAll();
 	}
 
 }
