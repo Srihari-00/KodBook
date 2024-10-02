@@ -19,7 +19,7 @@ public class UsersServiceImplementaion implements UsersService
 	}
 
 	@Override
-	public boolean getUser(String email, String username)
+	public boolean userExists( String username, String email)
 	{
 		Users user1 = repo.findByUsername(username); 
 		Users user2 = repo.findByEmail(email);
@@ -32,10 +32,22 @@ public class UsersServiceImplementaion implements UsersService
 	}
 
 	@Override
-	public Users fetchUser(String username) 
-	{
-		Users user = repo.findByUsername(username);
-		return user;
+	public boolean validateUser(String username, String password) {
+		String dbPass = repo.findByUsername(username).getPassword();
+		if(password.equals(dbPass)) {
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public Users getUser(String username) {
+		return repo.findByUsername(username);
+	}
+
+	@Override
+	public void updateUser(Users user) {
+		repo.save(user);
 	}
 	
 	
